@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">OttenCoffeeTest</string>
+    <string name="Failed">Data gagal dimuat</string>
+    <string name="retry">Retry</string>
+    <string name="notFound">Data tidak ditemukan</string>
+    <string name="product_name">Product name</string>
 </resources>

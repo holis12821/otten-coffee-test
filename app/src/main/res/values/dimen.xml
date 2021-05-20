@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="layout_widthCircleImageView">64dp</dimen>
+    <dimen name="layout_heightCircleImageView">64dp</dimen>
+    <dimen name="layout_marginEndCircleImageView">16dp</dimen>
+    <dimen name="layout_marginRightCircleImageView">16dp</dimen>
+    <dimen name="layout_marginBottomTextView">8dp</dimen>
+    <dimen name="layout_marginTop">15dp</dimen>
+    <dimen name="layout_marginTopTextViewProfile">12dp</dimen>
+    <dimen name="textSizeTextView">16sp</dimen>
+    <dimen name="textSizeTextView_Specification">12sp</dimen>
+    <dimen name="textSizeTextView_Stock">12sp</dimen>
+    <dimen name="textSizeTextView_Seller">12sp</dimen>
+    <dimen name="textSizeTextView_Display">14sp</dimen>
+    <dimen name="textSize_textView">32sp</dimen>
+
+    <dimen name="layout_marginTop_TextView">16dp</dimen>
+    <dimen name="layout_marginBottom_TextView">8dp</dimen>
+    <dimen name="layout_marginBottom_Text_View">16dp</dimen>
+    <dimen name="layout_marginLeftTextView">16dp</dimen>
+    <dimen name="layout_marginRightTextView">16dp</dimen>
+
+    <dimen name="layout_widthImageView">250dp</dimen>
+    <dimen name="layout_heightImageView">250dp</dimen>
+
+    <dimen name="CircleImageView_layout_width">56dp</dimen>
+    <dimen name="CircleImageView_layout_height">56dp</dimen>
+
+    <dimen name="shape_width">2dp</dimen>
+    <dimen name="corners_radius_btn">20dp</dimen>
+
+    <dimen name="layout_marginTop_Button">9dp</dimen>
+
+    <dimen name="layout_heightLinearLayout">240dp</dimen>
+    <dimen name="paddingLinearLayout">10dp</dimen>
+
+
+    <dimen name="layout_marginRightTextView_Product_Name">19dp</dimen>
+    <dimen name="layout_marginTopTextView_Product_Name">5dp</dimen>
+    <dimen name="layout_marginTop_Base_Price">16dp</dimen>
+
+    <dimen name="layout_marginStartTextView">19dp</dimen>
+    <dimen name="layout_marginTopTextView">32dp</dimen>
+    <dimen name="textSizeTextViewBasePrice">12sp</dimen>
+
+</resources>

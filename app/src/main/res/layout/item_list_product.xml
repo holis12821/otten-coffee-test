@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding">
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_product"
+        android:layout_width="@dimen/layout_widthCircleImageView"
+        android:layout_height="@dimen/layout_heightCircleImageView"
+        android:layout_marginEnd="@dimen/layout_marginEndCircleImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/ic_launcher_background"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/product_name"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/layout_marginTopTextView_Product_Name"
+        android:layout_marginStart="@dimen/layout_marginRightTextView_Product_Name"
+        app:layout_constraintStart_toEndOf="@+id/image_product"/>
+
+    <TextView
+        android:id="@+id/base_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_marginStartTextView"
+        android:layout_marginTop="@dimen/layout_marginTopTextView"
+        android:text="@string/product_name"
+        android:textSize="@dimen/textSizeTextViewBasePrice"
+        app:layout_constraintStart_toEndOf="@+id/image_product"
+        app:layout_constraintTop_toTopOf="@+id/product_name"
+        app:layout_goneMarginTop="@dimen/layout_marginTop_Base_Price" />
+</androidx.constraintlayout.widget.ConstraintLayout>
