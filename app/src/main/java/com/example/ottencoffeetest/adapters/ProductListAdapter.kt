@@ -1,22 +1,45 @@
 package com.example.ottencoffeetest.adapters
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
-import com.example.ottencoffeetest.R
 import com.example.ottencoffeetest.databinding.ItemListProductBinding
 import com.example.ottencoffeetest.model.ProductsItem
 import com.example.ottencoffeetest.utils.DiffUtils
+import com.example.ottencoffeetest.utils.OnItemClickListener
+import java.text.NumberFormat
+import java.util.*
 
-class ProductListAdapter: PagingDataAdapter<ProductsItem,
+class ProductListAdapter(
+    private val listener: OnItemClickListener
+): PagingDataAdapter<ProductsItem,
         ProductListAdapter.ProductHolderList>(DiffUtils.COMPARATOR) {
 
    inner class ProductHolderList (
        private val binding: ItemListProductBinding
    ): RecyclerView.ViewHolder(binding.root) {
+
+       init {
+           /*
+           karena menggunakan view binding jdi menggunakan binding
+           yg sblmnya menggunakan itemView yg bertipe view yg diberikan ke ViewHolder di constructor nya
+           untuk mendapatkan view layoutnya
+           */
+           binding.root.setOnClickListener {
+               val position  = bindingAdapterPosition
+               if (position != RecyclerView.NO_POSITION) {
+                   val item = getItem(position)
+                   if (item != null) {
+                       listener.onItemClick(item)
+                   }
+               }
+           }
+       }
+
+       @SuppressLint("SetTextI18n")
        fun bind(productItem: ProductsItem) {
            //binding view
            with(binding) {
@@ -24,7 +47,12 @@ class ProductListAdapter: PagingDataAdapter<ProductsItem,
                    .load(productItem.image?.thumbnailUrl)
                    .into(imageProduct)
                productName.text = productItem.name
-               basePrice.text = productItem.basePrice.toString()
+               //set Currency IDR
+               val localFormat = Locale("in", "ID")
+               val formatIDR = NumberFormat.getCurrencyInstance(localFormat)
+               productItem.basePrice?.let {
+                   basePrice.text = formatIDR.format(it)
+               }
            }
        }
    }
@@ -40,9 +68,9 @@ class ProductListAdapter: PagingDataAdapter<ProductsItem,
     }
 
     override fun onBindViewHolder(holder: ProductHolderList, position: Int) {
-       val currentItem = getItem(position)
-        if (currentItem != null) {
-            holder.bind(currentItem)
+       val productItem = getItem(position)
+        if (productItem != null) {
+            holder.bind(productItem)
         }
     }
 

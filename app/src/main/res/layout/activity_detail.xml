@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/root_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UselessLeaf">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView_detail"
+                android:layout_width="@dimen/imageView_width"
+                android:layout_height="@dimen/imageView_height"
+                android:contentDescription="@string/image_product"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.592"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.108" />
+
+            <TextView
+                android:id="@+id/tv_name_product_detail"
+                android:layout_width="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/detail_name_product"
+                android:textStyle="bold|italic"
+                android:textSize="@dimen/textSizeTextViewDetail"
+                android:layout_marginTop="@dimen/layout_marginTopTextViewDetail"
+                android:layout_marginStart="@dimen/layout_marginLeftTextViewDetail"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_detail"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_name_cicilan"
+                android:layout_width="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/detail_name_product"
+                android:textStyle="italic"
+                android:textSize="@dimen/textSizeTextViewDetail_cicilan"
+                android:layout_marginTop="@dimen/layout_marginTopTextViewDetail_cicilan"
+                android:layout_marginStart="@dimen/layout_marginLeftTextViewDetail"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_product_detail"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/discount"
+                android:layout_width="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/discount"
+                android:textStyle="italic"
+                android:textSize="@dimen/textSizeTextViewDetail_cicilan"
+                android:layout_marginTop="@dimen/layout_marginTopTextViewDetail_cicilan"
+                android:layout_marginStart="@dimen/layout_marginLeftTextViewDetail"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_cicilan"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints,UselessLeaf"
+        android:layout_marginBottom="@dimen/layout_marginBottomLinearLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/base_price_detail"
+            android:layout_width="wrap_content"
+            android:text="@string/base_price_detail"
+            android:textSize="@dimen/textSizeTextViewBasePrice_Detail"
+            android:layout_marginTop="@dimen/layout_marginTopTextView_BasePrice"
+            android:layout_marginStart="@dimen/layout_marginLeftLinearLayout"
+            android:layout_marginBottom="@dimen/layout_marginBottomTextView_BasePrice"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/tambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/teal_200"
+            android:layout_marginBottom="@dimen/layout_marginBottom_Button"
+            android:layout_marginEnd="@dimen/layout_marginEndBottom"
+            android:text="@string/buy"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,4 +4,13 @@
     <string name="retry">Retry</string>
     <string name="notFound">Data tidak ditemukan</string>
     <string name="product_name">Product name</string>
+    <string name="Error">Error load data</string>
+    <string name="try_again">Retry</string>
+    <string name="image_product">image product</string>
+    <string name="detail_name_product">Kopi Arabican dari biji kopi pilihan</string>
+    <string name="base_price_detail">Rp. 85.000</string>
+    <string name="buy">Beli yuk</string>
+    <string name="discount">kami menjual peralatan untuk membuat kopi dan juga menjual kopi
+    yang siap untuk di racik, banyak diskon yang beragam dari kami, jika anda tertarik tekan tombol beli yuk
+    untuk membeli product dari kami</string>
 </resources>

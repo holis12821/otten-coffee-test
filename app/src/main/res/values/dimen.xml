@@ -44,4 +44,33 @@
     <dimen name="layout_marginTopTextView">32dp</dimen>
     <dimen name="textSizeTextViewBasePrice">12sp</dimen>
 
+    <dimen name="paddingLoadingState">8dp</dimen>
+    <dimen name="errorLoadDataSizeText">17sp</dimen>
+
+    <dimen name="layout_heightLinearLayoutLoadingState">400dp</dimen>
+
+    <dimen name="imageView_width">384dp</dimen>
+    <dimen name="imageView_height">330dp</dimen>
+
+    <dimen name="absoluteY">0dp</dimen>
+    <dimen name="textSizeTextViewDetail">17sp</dimen>
+    <dimen name="textSizeTextViewDetail_cicilan">13sp</dimen>
+
+    <dimen name="layout_marginTopTextViewDetail">14dp</dimen>
+    <dimen name="layout_marginTopTextViewDetail_cicilan">14dp</dimen>
+    <dimen name="layout_marginLeftTextViewDetail">12dp</dimen>
+
+    <dimen name="layout_marginBottomTextView_Price">12dp</dimen>
+    <dimen name="layout_marginBottomTextView_BasePrice">11dp</dimen>
+
+    <dimen name="layout_marginBottomLinearLayout">2dp</dimen>
+    <dimen name="layout_marginLeftLinearLayout">12dp</dimen>
+
+    <dimen name="layout_marginTopTextView_BasePrice">12dp</dimen>
+
+    <dimen name="layout_marginEndBottom">20dp</dimen>
+
+    <dimen name="textSizeTextViewBasePrice_Detail">17sp</dimen>
+    <dimen name="layout_marginBottom_Button">10dp</dimen>
+
 </resources>

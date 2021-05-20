@@ -12,7 +12,6 @@
         android:layout_height="@dimen/layout_heightCircleImageView"
         android:layout_marginEnd="@dimen/layout_marginEndCircleImageView"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/ic_launcher_background"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
